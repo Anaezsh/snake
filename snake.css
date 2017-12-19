@@ -1,0 +1,98 @@
+#container {
+  margin: 50px auto;
+  width: 700px;
+  height: 450px;
+  border: 4px double red;
+  transition: .2s;
+}
+#wrapper1 {
+  width: 410px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#wrapper2 {
+  width: 270px;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+#matrix {
+  width: 400px;
+  height: 400px;
+  background-image: url("grass.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-top: 1px solid #4E572C;
+  border-left: 1px solid #4E572C;
+}
+#matrix .cell {
+  float: left;
+  width: 19px;
+  height: 19px;
+  border-bottom: 1px solid #4E572C;
+  border-right: 1px solid #4E572C;
+}
+#matrix .on {
+  background-color: #25E817;
+}
+#matrix .target {
+  background-color: red;
+}
+#matrix .border {
+  background-color: #AE855C;
+}
+#info {
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 90%;
+  height: 25%;
+  font-size: 17px;
+  text-align: center;
+}
+#info p {
+  margin: 12px auto;
+}
+#rules {
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 90%;
+  font-size: 15px;
+  text-align: justify;
+  background: lightgrey;
+}
+#rules h3 {
+  margin: 10px auto;
+  text-align: center;
+}
+#alert {
+  display: none;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  background: tan;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#alert img {
+  float: left;
+  margin-top: 11px;
+  margin-left: -5px;
+}
+#wrapper3 {
+  width: 170px;
+  height: 150px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

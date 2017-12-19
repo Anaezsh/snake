@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake</title>
+  <link rel="shortcut icon" type="image/x-icon" href="snake.png">
+  <link rel="stylesheet" href="snake.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="matrix.js"></script>
+  <script type="text/javascript" src="snake.js"></script>
+  <script type="text/javascript" src="target.js"></script>
+  <script type="text/javascript" src="border.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="enter.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrapper1">
+      <div id="matrix"></div>
+    </div>
+    <div id="wrapper2">
+      <div id="info">
+        <p><b>Очки: </b><span id="score"></span></p>
+        <p><b>Уровень: </b><span id="level"></span></p>
+        <p><b>Скорость: </b><span id="speed"></span></p>
+      </div>
+      <div id="rules">
+        <h3>Правила игры</h3>
+        <p>Ваша задача накормить змейку, собрав все яблоки на поле.
+           Управляйте ее движением с помощью клавиш вверх(<i class="ion-arrow-up-b"></i>), вниз(<i class="ion-arrow-down-b"></i>), вправо(<i class="ion-arrow-right-b"></i>) и влево(<i class="ion-arrow-left-b"></i>).
+           При столкновении с границами поля или со своим хвостом змейка погибает, и игра заканчивается.
+           Для начала новой игры перезагрузите страницу(<i class="ion-refresh"></i>).
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="alert">
+    <img src="snake.png" alt="snake">
+    <div id="wrapper3">
+      <p></p>
+    </div>
+  </div>
+</body>
+</html>
